@@ -1,0 +1,173 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "text", "id": "title", "x": 280, "y": 10, "text": "钱包授权检查 Agent \u2014 Workflow", "fontSize": 24, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "originalText": "钱包授权检查 Agent \u2014 Workflow", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "step1", "x": 80, "y": 90, "width": 180, "height": 70,
+      "backgroundColor": "#a5d8ff", "fillStyle": "solid", "strokeColor": "#4a9eed", "roundness": { "type": 3 },
+      "boundElements": [{"id": "t_s1", "type": "text"}, {"id": "a12", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_s1", "x": 85, "y": 105, "width": 170, "height": 40, "text": "1. \u7528\u6237\u8f93\u5165\nDApp \u7f51\u5740/\u5408\u7ea6\u5730\u5740", "fontSize": 16, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "step1", "originalText": "1. \u7528\u6237\u8f93\u5165\nDApp \u7f51\u5740/\u5408\u7ea6\u5730\u5740", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "step2", "x": 340, "y": 90, "width": 180, "height": 70,
+      "backgroundColor": "#d0bfff", "fillStyle": "solid", "strokeColor": "#8b5cf6", "roundness": { "type": 3 },
+      "boundElements": [{"id": "t_s2", "type": "text"}, {"id": "a12", "type": "arrow"}, {"id": "a23", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_s2", "x": 345, "y": 100, "width": 170, "height": 50, "text": "2. AI \u67e5\u8be2\u94fe\u4e0a\u6570\u636e\nbalance / allowance\n/\u5408\u7ea6\u4ee3\u7801\u5206\u6790", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "step2", "originalText": "2. AI \u67e5\u8be2\u94fe\u4e0a\u6570\u636e\nbalance / allowance\n/\u5408\u7ea6\u4ee3\u7801\u5206\u6790", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a12", "x": 260, "y": 125, "width": 80, "height": 0,
+      "points": [[0,0],[80,0]], "endArrowhead": "arrow", "strokeColor": "#8b5cf6", "strokeWidth": 2,
+      "startBinding": {"elementId": "step1", "fixedPoint": [1, 0.5]}, "endBinding": {"elementId": "step2", "fixedPoint": [0, 0.5]}
+    },
+    {
+      "type": "text", "id": "t_a12", "x": 278, "y": 105, "text": "\u89e3\u6790\u5e76\u67e5\u8be2", "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#8b5cf6", "originalText": "\u89e3\u6790\u5e76\u67e5\u8be2", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "step3", "x": 340, "y": 230, "width": 180, "height": 70,
+      "backgroundColor": "#fff3bf", "fillStyle": "solid", "strokeColor": "#f59e0b", "roundness": { "type": 3 },
+      "boundElements": [{"id": "t_s3", "type": "text"}, {"id": "a23", "type": "arrow"}, {"id": "a34", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_s3", "x": 345, "y": 240, "width": 170, "height": 50, "text": "3. AI \u751f\u6210\u6388\u6743\u8bf4\u660e\n\u6388\u6743\u5bf9\u8c61 / \u989d\u5ea6\n/ \u5408\u7ea6\u98ce\u9669\u8bc4\u7ea7", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "step3", "originalText": "3. AI \u751f\u6210\u6388\u6743\u8bf4\u660e\n\u6388\u6743\u5bf9\u8c61 / \u989d\u5ea6\n/ \u5408\u7ea6\u98ce\u9669\u8bc4\u7ea7", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a23", "x": 430, "y": 160, "width": 0, "height": 70,
+      "points": [[0,0],[0,70]], "endArrowhead": "arrow", "strokeColor": "#f59e0b", "strokeWidth": 2,
+      "startBinding": {"elementId": "step2", "fixedPoint": [0.5, 1]}, "endBinding": {"elementId": "step3", "fixedPoint": [0.5, 0]}
+    },
+    {
+      "type": "text", "id": "t_a23", "x": 440, "y": 168, "text": "\u5206\u6790\u62a5\u544a", "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#f59e0b", "originalText": "\u5206\u6790\u62a5\u544a", "autoResize": true
+    },
+
+    {
+      "type": "diamond", "id": "hitl", "x": 600, "y": 235, "width": 60, "height": 60,
+      "backgroundColor": "#ffc9c9", "fillStyle": "solid", "strokeColor": "#ef4444",
+      "boundElements": [{"id": "t_hitl", "type": "text"}, {"id": "a34", "type": "arrow"}, {"id": "a45", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_hitl", "x": 605, "y": 248, "width": 50, "height": 38, "text": "\u4eba\u5de5\n\u5ba1\u6838?", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#ef4444", "textAlign": "center", "verticalAlign": "middle", "containerId": "hitl", "originalText": "\u4eba\u5de5\n\u5ba1\u6838?", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a34", "x": 520, "y": 265, "width": 80, "height": 0,
+      "points": [[0,0],[80,0]], "endArrowhead": "arrow", "strokeColor": "#f59e0b", "strokeWidth": 2,
+      "startBinding": {"elementId": "step3", "fixedPoint": [1, 0.5]}, "endBinding": {"elementId": "hitl", "fixedPoint": [0, 0.5]}
+    },
+
+    {
+      "type": "rectangle", "id": "step5", "x": 740, "y": 245, "width": 160, "height": 50,
+      "backgroundColor": "#ffc9c9", "fillStyle": "solid", "strokeColor": "#ef4444", "roundness": { "type": 3 },
+      "boundElements": [{"id": "t_s5", "type": "text"}, {"id": "a45", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_s5", "x": 745, "y": 255, "width": 150, "height": 30, "text": "\u62d2\u7edd\u6388\u6743 / \u53d6\u6d88", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "step5", "originalText": "\u62d2\u7edd\u6388\u6743 / \u53d6\u6d88", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a45", "x": 660, "y": 265, "width": 80, "height": 0,
+      "points": [[0,0],[80,0]], "endArrowhead": "arrow", "strokeColor": "#ef4444", "strokeWidth": 2,
+      "startBinding": {"elementId": "hitl", "fixedPoint": [1, 0.5]}, "endBinding": {"elementId": "step5", "fixedPoint": [0, 0.5]}
+    },
+    {
+      "type": "text", "id": "t_a45", "x": 670, "y": 248, "text": "\u4e0d\u6388\u6743", "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#ef4444", "originalText": "\u4e0d\u6388\u6743", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "step6", "x": 600, "y": 370, "width": 180, "height": 70,
+      "backgroundColor": "#b2f2bb", "fillStyle": "solid", "strokeColor": "#22c55e", "roundness": { "type": 3 },
+      "boundElements": [{"id": "t_s6", "type": "text"}, {"id": "a56", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_s6", "x": 605, "y": 380, "width": 170, "height": 50, "text": "6. AI \u8ddf\u8e2a\u4ea4\u6613\u72b6\u6001\n\u67e5\u8be2 Tx Hash\n\u786e\u8ba4\u6388\u6743\u5df2\u751f\u6548", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "step6", "originalText": "6. AI \u8ddf\u8e2a\u4ea4\u6613\u72b6\u6001\n\u67e5\u8be2 Tx Hash\n\u786e\u8ba4\u6388\u6743\u5df2\u751f\u6548", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "step7", "x": 600, "y": 100, "width": 180, "height": 70,
+      "backgroundColor": "#b2f2bb", "fillStyle": "solid", "strokeColor": "#22c55e", "roundness": { "type": 3 },
+      "boundElements": [{"id": "t_s7", "type": "text"}, {"id": "a67", "type": "arrow"}, {"id": "a78", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_s7", "x": 605, "y": 110, "width": 170, "height": 50, "text": "5. \u7528\u6237\u5728 MetaMask\n\u786e\u8ba4\u6388\u6743\u4ea4\u6613\n\uff08\u4eba\u5de5\u7b7e\u540d\uff09", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "step7", "originalText": "5. \u7528\u6237\u5728 MetaMask\n\u786e\u8ba4\u6388\u6743\u4ea4\u6613\n\uff08\u4eba\u5de5\u7b7e\u540d\uff09", "autoResize": true
+    },
+
+    {
+      "type": "rectangle", "id": "step8", "x": 840, "y": 100, "width": 160, "height": 70,
+      "backgroundColor": "#c3fae8", "fillStyle": "solid", "strokeColor": "#22c55e", "roundness": { "type": 3 },
+      "boundElements": [{"id": "t_s8", "type": "text"}, {"id": "a78", "type": "arrow"}]
+    },
+    {
+      "type": "text", "id": "t_s8", "x": 845, "y": 110, "width": 150, "height": 50, "text": "7. \u533a\u5757\u6d4f\u89c8\u5668\u9a8c\u8bc1\n\u67e5\u770b allowance\n\u786e\u8ba4\u6388\u6743\u6709\u6548", "fontSize": 14, "fontFamily": 1,
+      "strokeColor": "#1e1e1e", "textAlign": "center", "verticalAlign": "middle", "containerId": "step8", "originalText": "7. \u533a\u5757\u6d4f\u89c8\u5668\u9a8c\u8bc1\n\u67e5\u770b allowance\n\u786e\u8ba4\u6388\u6743\u6709\u6548", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a56", "x": 690, "y": 305, "width": 0, "height": 65,
+      "points": [[0,0],[0,65]], "endArrowhead": "arrow", "strokeColor": "#22c55e", "strokeWidth": 2,
+      "startBinding": {"elementId": "hitl", "fixedPoint": [0.5, 1]}
+    },
+    {
+      "type": "text", "id": "t_a56", "x": 700, "y": 310, "text": "\u6388\u6743", "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#22c55e", "originalText": "\u6388\u6743", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a67", "x": 690, "y": 370, "width": 0, "height": -200,
+      "points": [[0,0],[0,-200]], "endArrowhead": "arrow", "strokeColor": "#22c55e", "strokeWidth": 2,
+      "startBinding": {"elementId": "step6", "fixedPoint": [0.5, 0]}, "endBinding": {"elementId": "step7", "fixedPoint": [0.5, 1]}
+    },
+    {
+      "type": "text", "id": "t_a67", "x": 700, "y": 268, "text": "\u6267\u884c\u7ed3\u679c", "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#22c55e", "originalText": "\u6267\u884c\u7ed3\u679c", "autoResize": true
+    },
+
+    {
+      "type": "arrow", "id": "a78", "x": 780, "y": 135, "width": 60, "height": 0,
+      "points": [[0,0],[60,0]], "endArrowhead": "arrow", "strokeColor": "#22c55e", "strokeWidth": 2,
+      "startBinding": {"elementId": "step7", "fixedPoint": [1, 0.5]}, "endBinding": {"elementId": "step8", "fixedPoint": [0, 0.5]}
+    },
+    {
+      "type": "text", "id": "t_a78", "x": 790, "y": 118, "text": "\u786e\u8ba4", "fontSize": 13, "fontFamily": 1,
+      "strokeColor": "#22c55e", "originalText": "\u786e\u8ba4", "autoResize": true
+    },
+
+    {
+      "type": "text", "id": "zone_ai", "x": 395, "y": 80, "text": "\u23f0 \u8fd9\u4e9b\u6b65\u9aa4\u7531 AI \u81ea\u52a8\u5b8c\u6210\uff0c\u4e0d\u9700\u8981\u4eba\u5de5\u5e72\u9884", "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#8b5cf6", "originalText": "\u23f0 \u8fd9\u4e9b\u6b65\u9aa4\u7531 AI \u81ea\u52a8\u5b8c\u6210\uff0c\u4e0d\u9700\u8981\u4eba\u5de5\u5e72\u9884", "autoResize": true
+    },
+    {
+      "type": "text", "id": "zone_hitl", "x": 650, "y": 195, "text": "\u26a0\ufe0f \u4eba\u5de5\u5ba1\u6838\u8282\u70b9", "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#ef4444", "originalText": "\u26a0\ufe0f \u4eba\u5de5\u5ba1\u6838\u8282\u70b9", "autoResize": true
+    },
+    {
+      "type": "text", "id": "zone_wallet", "x": 650, "y": 86, "text": "\ud83d\udcb3 \u7528\u6237\u5728\u94b1\u5305\u4e2d\u7b7e\u540d\u786e\u8ba4", "fontSize": 12, "fontFamily": 1,
+      "strokeColor": "#22c55e", "originalText": "\ud83d\udcb3 \u7528\u6237\u5728\u94b1\u5305\u4e2d\u7b7e\u540d\u786e\u8ba4", "autoResize": true
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
