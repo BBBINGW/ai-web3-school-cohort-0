@@ -2,6 +2,22 @@
 
 > 提交时间：2026-05-24
 > Workflow 图：https://excalidraw.com/#json=ooAcyMCds8pPE2XMAnXFn,sWkmF1LXo_9X3Q6r_LqjoA
+> CLI 工具代码：https://github.com/BBBINGW/ai-web3-school-cohort-0/blob/main/experiments/wallet-approval-checker.py
+
+---
+
+## 0. 实际交付：CLI 工具
+
+已实现一个可运行的 CLI 工具，支持：
+
+```bash
+# 演示模式（无需 API Key）
+python3 wallet-approval-checker.py <合约地址>
+
+# 真实模式（需 ETHERSCAN_API_KEY）
+export ETHERSCAN_API_KEY=your_key
+python3 wallet-approval-checker.py <合约地址> --network sepolia
+```
 
 ---
 
@@ -21,31 +37,46 @@
 "0x7a250d5630b4cf539739df2c5dacb4c659f2488d"
 ```
 
-### 输出示例
+### 输出示例（实际 CLI 运行效果）
 
 ```
-🔍 授权检查报告
+============================================================
+  🔍 检查合约: 0x7a250d5630b4cf539739df2c5dacb4c659f2488d
+============================================================
 
-合约: Uniswap V2 Router 02 (0x7a25...8d)
-网络: Sepolia
+  📄 合约: UniswapV2Router02
+  ✅ 已开源验证
+  🕐 部署时间: 2023-06-15 (大约 2 年前)
+  🔄 交互次数: 152,340 笔交易
 
-📊 你的钱包状态
-   USDC 余额: 100.5 USDC
-   当前对该合约的授权: 0 USDC (未授权过)
+────────────────────────────────────
+  💰 代币余额与建议授权额度
+────────────────────────────────────
 
-⚠️ 授权请求分析
-   Spender: Uniswap V2 Router 02
-   请求额度: 无上限 (Unlimited)
-   ✓ 合约已验证 (Etherscan 验证通过)
-   ⚠️ 该合约有 proxy 模式，注意实现合约地址
+  USDC: 100.5000
+     建议授权额度: 110.5500 USDC（余额 + 10% 缓冲）
+     而非: 无限额度 (Unlimited)
 
-🔐 风险评级: 🟡 中等
-   - 合约主体验证通过
-   - 请求无限额度，超过你的实际余额
-   - 建议: 授权时手动改为"自定义额度"而非无限
+  WETH: 0.5000
+     建议授权额度: 0.5500 WETH（余额 + 10% 缓冲）
 
-👉 下一步: 如果你信任 Uniswap 并需要使用，请确认 MetaMask 弹窗
-   建议额度: 110 USDC (当前余额 + 10% 缓冲)
+  DAI: 2,000.0000
+     建议授权额度: 2,200.0000 DAI（余额 + 10% 缓冲）
+
+────────────────────────────────────
+  安全扫描发现 (3 项)
+────────────────────────────────────
+
+  🟡 Ownership 可转移 — 中风险
+     确认 owner 地址可信
+  ℹ️ onlyOwner 修饰符 — 参考信息
+     合约使用 onlyOwner 保护关键函数
+
+────────────────────────────────────
+  总体评估: 🟡 中风险
+  建议: ⚠️ 建议自定义额度并确认合约来源可信
+  ⚠️ 此报告仅供参考，AI 不能替你做最终决定
+────────────────────────────────────
 ```
 
 ---
