@@ -54,14 +54,18 @@ Agent 逐个提问 → 学生用自己的话回答 → Agent 核对并补充 →
 
 ### 关键 prompt
 ```
-"辅助我完成。你可以每一个概念都问问我，看看我的理解，然后修正有不对的地方。最后所有都问过一遍后为我整理。"
+"请作为我的 AI × Web3 School Learning Agent，先阅读启动 Prompt：https://aiweb3.school/learning-agent.zh.txt ，并结合 Handbook：https://aiweb3.school/zh/handbook/ ，帮我初始化个人学习计划、GitHub 学习仓库、每日打卡草稿和 Handbook feedback 流程。"
 ```
 
-### 效果
-这种方式确保了：
-- 概念不是被动接收而是在主动输出中构建
-- 理解和误解同时暴露，便于精准修正
-- 最终的卡片有真实的"自己的话"质感
+这是训练营官方提供的 **Learning Agent 启动 Prompt**，完整定义了 Agent 的角色和初始化流程，包括：
+1. 阅读启动 Prompt 文件 + Handbook
+2. 收集学员画像
+3. 创建 GitHub 学习仓库并初始化目录结构
+4. 编写个性化学习计划
+5. 生成每日打卡草稿
+6. 建立 Handbook feedback 流程
+
+在此基础上，**具体任务的执行使用了 Socratic 对话法** — 每完成一个概念，Agent 先提问让用户用自己的话回答，再核对修正，最后归纳成卡:
 
 ### 配置说明
 
