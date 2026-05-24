@@ -39,15 +39,17 @@ contract HelloWeb3 {
 
 ## 功能验证
 
-| 操作 | 输入 | 输出 |
-|------|------|------|
-| 读取 `greeting()` | — | `"Hello AI x Web3!"` |
-| 调用 `setGreeting()` | `"I deployed my first contract!"` | ✅ 交易确认 |
-| 再次读取 `greeting()` | — | `"I deployed my first contract!"` |
+| 步骤 | 操作 | 输入 | 输出/交易 Hash |
+|------|------|------|---------------|
+| 1 | 读取 `greeting()` | — | `"Hello AI x Web3!"` |
+| 2 | 调用 `setGreeting()` | `"I deployed my first contract!"` | [`0xdf0f...6bc`](https://sepolia.etherscan.io/tx/0xdf0f9dc4c00829ba80be4b59fd07257e1766717667a04017878e9b61a10d66bc) |
+| 3 | 再次读取 `greeting()` | — | `"I deployed my first contract!"` |
 
 ## 区块浏览器链接
 
-🔗 https://sepolia.etherscan.io/address/0x08029418c8A7242cfA4662933b949c8438e5B20D
+- **合约地址：** https://sepolia.etherscan.io/address/0x08029418c8A7242cfA4662933b949c8438e5B20D
+- **部署交易：** https://sepolia.etherscan.io/tx/0xcadc76f97b5e0e0ef5e6efe8414b6243b8ef815e08917d591beaccfa15f613ab
+- **setGreeting 交易：** https://sepolia.etherscan.io/tx/0xdf0f9dc4c00829ba80be4b59fd07257e1766717667a04017878e9b61a10d66bc
 
 ## 说明
 
